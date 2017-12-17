@@ -6,7 +6,27 @@ using System.Threading.Tasks;
 
 namespace UsingSimplifierTestSolution.Grandfather.Parent.Me
 {
-    class MeClass
+    public static class MeClass
     {
+        public static string Ns { get; } = "UsingSimplifierTestSolution.Grandfather.Parent.Me";
+
+        public static void MeClassMethod()
+        {
+            Console.WriteLine($"{Ns}.{nameof(MeClass)}.{nameof(MeClassMethod)}");
+        }
+    }
+}
+
+namespace UsingSimplifierTestSolution.Grandfather.Parent.WhatIfIamAnImpersonator
+{
+    public static class MeClass
+    {
+        public static string Ns { get; } = 
+            "UsingSimplifierTestSolution.Grandfather.Parent.WhatIfIAmAnImpersonator";
+
+        public static void MeClassMethod()
+        {
+            Console.WriteLine($"{Ns}.{nameof(MeClass)}.{nameof(MeClassMethod)}");
+        }
     }
 }

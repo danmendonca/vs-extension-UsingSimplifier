@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace UsingSimplifierTestSolution.Grandfather.Parent2
 {
-    class ParentClass
+    public class SiblingClass
     {
+        public static string Ns { get; } = "UsingSimplifierTestSolution.Grandfather.Parent2";
+
+        public static void ParentMethod()
+        {
+            Console.WriteLine($"{Ns}.{nameof(SiblingClass)}.{nameof(ParentMethod)}");
+        }
     }
 }

@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Grandfather\GrandfatherClass.cs" />
     <Compile Include="Grandfather\Parent2\Me\MeClass.cs" />
     <Compile Include="Grandfather\Parent2\ParentClass.cs" />
     <Compile Include="Grandfather\Parent2\Sibling1\SiblingClass.cs" />
